@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "renderer": "skyline",
+  "disableScroll": true,
+  "usingComponents": {}
+}

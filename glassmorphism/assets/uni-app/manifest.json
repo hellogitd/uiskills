@@ -1,0 +1,40 @@
+{
+  "name": "glassmorphism",
+  "appid": "",
+  "description": "毛玻璃合集（Skyline + backdrop-filter）",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "vueVersion": "3",
+  "app-plus": {
+    "usingComponents": true,
+    "compilerVersion": 3
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "lazyCodeLoading": "requiredComponents",
+    "renderer": "skyline",
+    "componentFramework": "glass-easel",
+    "rendererOptions": {
+      "skyline": {
+        "defaultDisplayBlock": true,
+        "defaultContentBox": true,
+        "disableABTest": true,
+        "sdkVersionBegin": "3.0.2",
+        "sdkVersionEnd": "15.255.255"
+      }
+    }
+  },
+  "h5": {
+    "router": {
+      "mode": "hash"
+    }
+  }
+}

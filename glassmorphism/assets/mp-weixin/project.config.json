@@ -1,0 +1,14 @@
+{
+  "description": "毛玻璃合集 Demo（Skyline + backdrop-filter）",
+  "appid": "touristappid",
+  "projectname": "glassmorphism-demo",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "./",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false
+  }
+}

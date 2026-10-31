@@ -1,0 +1,66 @@
+/* ============================================================
+ * glass.wxss —— 毛玻璃可复用样式（原生小程序 / Skyline）
+ * 用法：页面 wxss 顶部 @import "../../styles/glass.wxss";
+ *      然后给 view 叠加 class="glass glass--card" 等。
+ *
+ * 两个硬性约束（Skyline 实测 + 官方文档）：
+ * 1. Skyline 的 backdrop-filter 官方只支持「单个 filter-function」，
+ *    所以这里只写 blur()，不要写成 blur() saturate()（真机有风险）。
+ * 2. Skyline 不支持 @supports，降级必须靠 JS 或「始终保留半透明底色」。
+ * 3. 只使用单层 class 选择器，不写后代选择器 / 属性选择器。
+ * ============================================================ */
+
+/* 基础玻璃：半透底 + 单函数模糊 + 细边。
+ * overflow:hidden 与 border-radius 写在同一个节点上：
+ *  - WebView 回退时靠它把模糊裁进圆角（经典坑）
+ *  - Skyline 下 border-radius 本身也会裁，但写上无害、行为更统一 */
+.glass {
+  box-sizing: border-box;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1rpx solid rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* 更实一点的玻璃（按钮/需要更高可读性时） */
+.glass--strong {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+/* 更透一点的玻璃（背景内容更重要时） */
+.glass--soft {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* 模糊强度三档：8 / 14 / 24，推荐 8~16 */
+.glass--blur8 {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.glass--blur24 {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* 圆角尺寸 */
+.glass--card {
+  border-radius: 36rpx;
+}
+
+.glass--circle {
+  border-radius: 50%;
+}
+
+.glass--pill {
+  border-radius: 999rpx;
+}
+
+.glass--item {
+  border-radius: 24rpx;
+}
+
+.glass--dock {
+  border-radius: 32rpx;
+}

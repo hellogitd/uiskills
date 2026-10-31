@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "path": "pages/glass-demo/glass-demo",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "renderer": "skyline",
+        "componentFramework": "glass-easel",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/glass-components/glass-components",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "renderer": "skyline",
+        "componentFramework": "glass-easel",
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0b0d1a",
+    "backgroundTextStyle": "light"
+  }
+}

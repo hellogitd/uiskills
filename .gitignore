@@ -1,0 +1,20 @@
+# 依赖 / 构建产物
+node_modules/
+dist/
+unpackage/
+.hbuilderx/
+.mini-typescript/
+
+# 打包出来的技能 zip（源码在 glassmorphism/ 里）
+*.zip
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时验证目录
+.verify/
