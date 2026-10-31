@@ -1,6 +1,7 @@
 # uiskills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/hellogitd/uiskills)](https://github.com/hellogitd/uiskills/releases)
 [![Skill](https://img.shields.io/badge/skill-glassmorphism-8b5cf6)](#技能列表)
 [![Platform](https://img.shields.io/badge/platform-微信小程序%20%7C%20uni--app-07c160)](#)
 
@@ -39,6 +40,10 @@
 > 已验证的构建组合：`@dcloudio/* 3.0.0-5030420261029002`（vue3 dist-tag）+ `vite 5.2.8` + `vue 3.4.21`，编译器 5.34（vue3）。
 
 ## 安装为 AI Skill
+
+方式一：直接从 [Releases](https://github.com/hellogitd/uiskills/releases) 下载 `uiskills-glassmorphism.zip`，解压得到 `glassmorphism/`，整个放进你的 agent skills 目录即可（保持 `SKILL.md` 在目录根部）。
+
+方式二：从源码安装：
 
 ```bash
 git clone https://github.com/hellogitd/uiskills.git
